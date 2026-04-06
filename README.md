@@ -13,7 +13,7 @@ docker compose up -d
 ```
 
 ## Credentials
-On first run: 
-Email: admin
-Password: admin
+On first run:  
+Email: admin  
+Password: admin  
 
