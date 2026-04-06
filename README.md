@@ -10,3 +10,10 @@ Production‑grade Odoo 17 setup using Docker Compose.
 ```bash
 cp .env.example .env
 docker compose up -d
+```
+
+## Credentials
+On first run: 
+Email: admin
+Password: admin
+

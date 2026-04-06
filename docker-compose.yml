@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   postgres:
     image: postgres:15
@@ -22,6 +20,11 @@ services:
       - ./addons:/mnt/extra-addons
       - ./config/odoo.conf:/etc/odoo/odoo.conf
       - ./data/odoo:/var/lib/odoo
-    command: odoo -c /etc/odoo/odoo.conf
+    # After the first run is completed, replace the line below with the commented one:
+    # command: odoo -c /etc/odoo/odoo.conf
+    command: odoo -c /etc/odoo/odoo.conf -i base
     environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      HOST: postgres
+      PORT: 5432
+      USER: violet_user
+      PASSWORD: ${POSTGRES_PASSWORD}
