@@ -1,4 +1,4 @@
-# Odoo Rental Project
+# Odoo Project
 
 Production‑grade Odoo 17 setup using Docker Compose.
 
